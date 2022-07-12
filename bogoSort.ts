@@ -29,7 +29,7 @@ function isSorted(list: Array<Person>, prop: "randomNumber" | "id" = "id") {
 /**
  * Randomly shuffles the array until its sorted
  *
- * has a ver bad time complexity
+ * has a very bad time complexity cause it's random
  *
  * uses a constant space complexity O(1)
  *
