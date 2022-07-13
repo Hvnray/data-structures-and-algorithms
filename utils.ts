@@ -2894,9 +2894,9 @@ function generateName() {
 }
 /**
  * Randomly shuffles an array
- * @param {Array<Person>}arr to shuffle
+ * @param {Array<Type>}arr to shuffle
  */
-export function shuffleArray(arr: Array<Person>) {
+export function shuffleArray<Type>(arr: Array<Type>) {
   for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [arr[i], arr[j]] = [arr[j], arr[i]];

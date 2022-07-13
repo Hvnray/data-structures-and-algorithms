@@ -2,7 +2,7 @@ import { generateDummyJson, shuffleArray, Person } from "./utils.js";
 
 const json100 = generateDummyJson(10);
 console.table(json100);
-shuffleArray(json100);
+shuffleArray<Person>(json100);
 console.table(json100);
 
 /**
