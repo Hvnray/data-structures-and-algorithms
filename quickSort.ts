@@ -10,7 +10,9 @@ function quickSort<T>(list: Array<T>): Array<T> {
   /** Base case return the array if lenght is less than one as nothing to sort then exit function */
   if (list.length <= 1) return list;
 
-  /** use the first value as the `pivot` (value to use as a base and compare other array elements) */
+  /** use the first value as the `pivot` (value to use as a base and compare other array elements) 
+   * splice also mutates the `list`, removing the first index  
+  */
   let pivot = list.splice(0, 1)[0];
 
   /** array to store values less than the pivot value in the array */
